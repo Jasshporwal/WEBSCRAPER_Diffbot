@@ -1,5 +1,6 @@
 from typing import List, Optional
 from pydantic import BaseModel, HttpUrl
+from datetime import datetime
 
 class ArticleData(BaseModel):
     title: str
@@ -21,3 +22,11 @@ class GeneralData(BaseModel):
     meta_description: Optional[str] = None
     h1_tags: List[str]
     links: List[HttpUrl]
+
+class EventData(BaseModel):
+    name: str
+    date: Optional[datetime] = None
+    location: Optional[str] = None
+    description: Optional[str] = None
+    organizer: Optional[str] = None
+    url: str
