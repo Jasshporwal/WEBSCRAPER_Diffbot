@@ -14,7 +14,7 @@ async def extract_article(url: HttpUrl):
 async def extract_product(url: HttpUrl):
     return product.extract_product(url)
 
-@app.get("/images", response_model=list[ImageData])  # Change here
+@app.get("/images",response_model=ImageData)
 async def extract_images(url: HttpUrl):
     return image.extract_images(url)
 
