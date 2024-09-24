@@ -13,7 +13,7 @@ class ProductData(BaseModel):
     description: Optional[str] = None
 
 class ImageData(BaseModel):
-    url: HttpUrl
+    url: str
     alt: Optional[str] = None
 
 class GeneralData(BaseModel):
