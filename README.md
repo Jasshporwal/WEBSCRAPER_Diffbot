@@ -6,8 +6,8 @@ This project is a simple web scraping API built with FastAPI. It provides endpoi
 
 1. Clone the repository:
    ```
-   git clone 
-   cd web-scraper
+   git clone https://github.com/Jasshporwal/WEBSCRAPER_Diffbot.git
+   cd WEBSCRAPER_Diffbot
    ```
 
 2. Create a virtual environment and activate it:
